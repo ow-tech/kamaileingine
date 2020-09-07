@@ -1,3 +1,41 @@
-nav ul li{
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+li, a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size:16px;
+    color:#edf0f1;
+    text-decoration:none;
     
+};
+header {
+    display:flex;
+    justify-items: space-between;
+    align-items: center;
+    padding:30px 10%;
+}
+.navis{
+    list-style: none;
+    display:flex;
+    justify-items: space-between;
+    align-items: center;
+    margin-left: 15%;
+}
+.navis li {
+    display:inline-block;
+    margin:30px;
+
+}
+.navis li a{
+    transition: all 0.3s ease 0s;
+}
+.navis li a:active{
+    border-left:solid #b01f24 2px;
+    background-color: #b01f24;
+    opacity: 0.5;
+}
+.navis li a:hover{
+    border-left:solid #b01f24 3px;
+    border-left:solid #b01f24 3px;
+    background-color: #b01f24;
 }
