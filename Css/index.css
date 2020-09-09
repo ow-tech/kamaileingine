@@ -82,11 +82,24 @@ a.active,a:active, a:hover{
 
 
 div.footer{
-    outline-style: solid;
-    outline-color: rgba(176,31,36,1);
+    border: 2px solid #bb0011;
+    border-radius: 10px;
+    /* outline-style: solid;
+    outline-color: rgba(176,31,36,1); */
     margin-top:10px;
-    width: 100%;
+    /* width: 100%; */
     height: 80px;
+    padding:30px;
+    font-family: Open Sans;
+    font-weight: Regular;
+    font-size: 16px;
+    
+  }
+.final{
+    color: black;
+      display: flex;
+      justify-content: center;
+      text-
   }
   @media all and (max-width: 932px) {
     .checkbtn{
@@ -139,22 +152,32 @@ div.footer{
     border: solid 2px #b01f24;
     border-radius: 15px;
 }
-.slogan{
+/* .slogan{
   
+    
+} */
+
+.introSlogan{
+    /* height:100vh; */
+    position: relative;
+    top:51;
+    width:40%;
+    opacity: ;
+    transform:translateY(20px);
+    transition:0.5s all ease-in-out;
     margin: 20px;
     border-top:solid 2px #b01f24;
     font-family: Open Sans;
     font-weight: Regular;
     font-size: 16px;
+    
+}
+.introSlogan p{
+    display: flex;
+    align-items:flex-end;
 }
 
-.introSlogan{
-    opacity: 0;
-    transform:translateY(20px);
-    transition:0.5s all ease-in-out;
-}
-
-.intro-apper{
+#introAppear{
     opacity: 1;
     transform: translate(0px);
 }
