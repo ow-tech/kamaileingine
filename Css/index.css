@@ -94,7 +94,7 @@ section{
     opacity: 1;
     position: relative;
     top: 0px;
-    left: 0px;
+    left: 750px;
     overflow: hidden;
   }
 .v4_3 {
@@ -203,4 +203,18 @@ div.footer{
         display: none;
     } */
 
+}
+
+.section{
+    background-color: black;
+    margin-top:15%;
+    height: 500px
+}
+.img1{
+    position:relative;
+    display: flex;
+    float:right;
+    margin: 20px;
+    border: solid 2px #b01f24;
+    border-radius: 15px;
 }
