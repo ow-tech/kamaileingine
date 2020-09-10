@@ -10,44 +10,10 @@ body{
     text-decoration:none;
     list-style: none;
     font-family: 'Open Sans', sans-serif;
-    /* color:#edf0f1; */
 
 }
-/* nav{
-    background-color: black;
-    height: 80px;
-    width:100%;
-    
-} */
-
-/* nav ul{
-    
-    float:right;
-    margin-right: 20%;
-    
-} */
-/* nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin:0 5px;
-    
-} */
-/* 
-.navis >li {
-    display: inline;
-    position:static;
-    line-height: 80px;
-    margin:0 5px;
-    letter-spacing:3PX ;
-    text-align: center;
-    box-sizing: border-box;
-    text-transform: uppercase;
-    cursor: pointer;
-    
-
-} */
 nav {
-    margin:100px 60px;
+    margin:20px;
 }
 nav ul {
     list-style:none;
@@ -64,12 +30,13 @@ nav li {
     position: relative;
 }
 nav li a {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width:100%;
     height:;
     display:block;
     color: black;
     text-decoration:none;
+    font-family: 'Open Sans', sans-serif;
 }
 
 a.active,a:active, a:hover{
@@ -81,12 +48,18 @@ a.active,a:active, a:hover{
  nav ul.child{
      position:absolute;
      display:none;
+     cursor: pointer;
 
+ }
+ ul.child >a:hover{
+    background-color:#b01f24 ;
+    transition: all 0.4s ease 0s;
+    border-radius: 3px;
  }
 
 .checkbtn{
     font-size:30px;
-    color:white;
+    color:whitesmoke;
     float:right;
     line-height: 80px;
     margin-right:40px;
@@ -162,6 +135,7 @@ div.footer{
     margin-top:8%;
     height: 500px;
     opacity: 0.9;
+
 }
 .img1{
    
@@ -176,8 +150,8 @@ div.footer{
 } */
 
 .introSlogan{
-    position: relative;
-    top:51;
+    /* position: relative;
+    top:51; */
     width:40%;
     opacity: ;
     transform:translateY(20px);
@@ -192,12 +166,13 @@ div.footer{
 .introSlogan p{
     display: flex;
     align-items:flex-end;
+
 }
 
-#introAppear{
-    opacity: 1;
+/* #introAppear{
+    opacity: ;
     transform: translate(0px);
-}
+} */
 .logo1{
     height:30px;
     width:30px;
@@ -206,3 +181,7 @@ div.footer{
     margin-left: 20px;
     margin-top:10px;
 } 
+.officialLogo{
+    width:300px;
+    height: 100px;
+}

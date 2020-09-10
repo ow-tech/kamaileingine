@@ -11,10 +11,12 @@
 $(function(){
     $('.navis li').hover(
         function(){
-            $('ul.child', this).slideDown(500)
+            $('ul.child', this).slideDown(500);
+            $('div.section',this).fadeOut(100)
         },
         function(){
             $('ul.child', this).fadeOut(200)
+            $('div.section',this).fadeIn(500)
         }
     );
 });
