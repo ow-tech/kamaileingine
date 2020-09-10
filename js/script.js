@@ -1,9 +1,20 @@
 
-console.log('Alex compuetr')
-function onSiteAppear(){
-    var introSlogan = document.querySelector('.introSlogan');
-    var introPostion = introSlogan.get;
-    console.log(introSlogan);
+// console.log('Alex compuetr')
+// function onSiteAppear(){
+//     var introSlogan = document.querySelector('.introSlogan');
+//     var introPostion = introSlogan.get;
+//     console.log(introSlogan);
 
-}
-onSiteAppear()
+// }
+// onSiteAppear()
+
+$(function(){
+    $('.navis li').hover(
+        function(){
+            $('ul.child', this).slideDown(500)
+        },
+        function(){
+            $('ul.child', this).fadeOut(200)
+        }
+    );
+});
