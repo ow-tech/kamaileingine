@@ -23,9 +23,10 @@ $(function(){
 // $(selector).animate(obj, time, callback)
 $(function(){
     let slideWidth = 500;
-    let animationSpeed = 1000;
-    let pause = 3000;
+    let animationSpeed = 3000;
+    let pause = 5000;
     let currentSlide = 1;
+    
 
 
     // cache DOM
@@ -33,14 +34,27 @@ $(function(){
     let $sliderContainer = $slider.find('.slides');
     let $slides = $sliderContainer.find('.slide');
 
-    setInterval(function(){
-        $sliderContainer.animate({'margin-left': '-='+slideWidth}, animationSpeed, function(){
-            currentSlide ++;
-            if (currentSlide == $slides.length){
-                currentSlide = 1;
-                $sliderContainer.css('margin-left', 0)
-            }
-        });
+    let slideInterval;
+    function startSlider(){
+        slideInterval = setInterval(function(){
+            $sliderContainer.animate({'margin-left': '-='+slideWidth}, animationSpeed, function(){
+                currentSlide ++;
+                if (currentSlide == $slides.length){
+                    currentSlide = 1;
+                    $sliderContainer.css('margin-left', 0)
+                }
+            });
 
     }, pause);
+    }
+    function pauseSlider(){
+        clearInterval(interval);
+
+    }
+
+    // listen for mouseengter and pause
+    // resume on mouserelease
+    $slider.on('mousenter', pauseSlider).on('mouseleave', startSlider);
+
+    startSlider();
 });
