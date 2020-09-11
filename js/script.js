@@ -7,6 +7,9 @@ $(function(){
         function(){
             $('ul.child', this).slideDown(500);
         },
+        // function (){
+        //     $('ul.child', this).fadeOut(300);
+        // },
     )
 });
 
@@ -57,4 +60,10 @@ $(function(){
     $slider.on('mousenter', pauseSlider).on('mouseleave', startSlider);
 
     startSlider();
+});
+
+//  slogan toggle
+
+$(function(){
+    $('.introSlogan p').slideDown(1000);
 });
