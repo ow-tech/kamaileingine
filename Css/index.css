@@ -125,11 +125,57 @@ a.active,a:active, a:hover{
     background-color: black;
     margin-top:8%;
     border-radius: 20px;
-    height: 200px;
+    height: 239px;
 }
+
+.h4us{
+    margin: 5px;
+    padding:10px;
+    cursor: pointer;
+}
+.h6us{
+    letter-spacing: 3px;
+    font-family: Open Sans;
+    font-weight: Regular;
+    font-size: 16px;
+    border-bottom: 3px solid #b01f24;
+    cursor: pointer;
+
+}
+
+.pus{
+    margin: 5px;
+    padding:20px;
+    color:white;
+    font-family: Open Sans;
+    font-weight: Regular;
+    font-size: 16px;
+    /* display:none; */
+
+}
+.rus{
+    /* margin-top:20px; */
+    margin:10px;
     
+}
+
+.pusv{
+    background-color: #CDB30c;
+    cursor: pointer;
+    /* display:none; */
+}
+.pusm{
+    background-color: #62760c;
+    cursor: pointer;
+    /* display:none; */
+}
+.pusc{
+    background-color: #535206;
+    cursor: pointer;
+    /* display:none; */
+}
 div.footer{
-    border: 4px solid #bb0011;
+    border: 4px solid #b01f24;
     border-radius: 10px;
     margin-top:4.4%;
     height: 70px;
@@ -140,10 +186,10 @@ div.footer{
   }
 .final{
     color: black;
-      display: flex;
-      justify-content: center;
-      padding-top:15px;
-      align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top:15px;
+    align-items: center;
   }
   @media all and (max-width: 932px) {
     .checkbtn{

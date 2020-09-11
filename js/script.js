@@ -1,4 +1,4 @@
-// User InterFace
+// index.html User InterFace
 
 
 // nav dropdown
@@ -65,5 +65,21 @@ $(function(){
 //  slogan toggle
 
 $(function(){
-    $('.introSlogan p').slideDown(1000);
+    $('.introSlogan p').slideDown(10000);
 });
+
+
+
+
+// about us user interface
+$(function(){
+    $('.pus').fadeIn(5000)
+})
+
+// mission vision core
+
+// $(function(){
+//     $('#h4us').click(function(){
+//         $('.pusv').toggleIn();
+//     })
+// });
