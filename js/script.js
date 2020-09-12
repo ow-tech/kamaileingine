@@ -77,9 +77,12 @@ $(function(){
 })
 
 // mission vision core
+$(function(){
+    $('.rus div h6', this).click( function(){
 
-// $(function(){
-//     $('#h4us').click(function(){
-//         $('.pusv').toggleIn();
-//     })
-// });
+        $('.rus div p').slideDown(4000)
+        $('.rus div p').toggle(6500);
+
+    })
+
+});
