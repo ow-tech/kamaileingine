@@ -80,8 +80,9 @@ $(function(){
 $(function(){
     $('.rus div h6', this).click( function(){
 
-        $('.rus div p').slideDown(4000)
-        $('.rus div p').toggle(6500);
+        $('.rus div p').slideDown(9000)
+        $('div.footerus').css('margin-top','4.4%')
+        $('.rus div p').toggle(100000);
 
     })
 
