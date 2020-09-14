@@ -43,7 +43,7 @@ $(function(){
             $sliderContainer.animate({'margin-left': '-='+slideWidth}, animationSpeed, function(){
                 currentSlide ++;
                 if (currentSlide == $slides.length){
-                    currentSlide = 1;
+                    currentSlide = 0;
                     $sliderContainer.css('margin-left', 0)
                 }
             });

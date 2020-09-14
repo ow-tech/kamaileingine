@@ -171,6 +171,66 @@ a.active,a:active, a:hover{
     position: relative;
     top:-8px;
 }
+
+    /* contact section css */
+.contact{
+    margin-top:30px;
+    padding:20px
+}
+.condiv1{
+    height:68.5vh;
+    border-radius: 10px;
+}
+h4{
+    font-family:Open Sans ;
+    font-size: larger;
+    font-size:20px;
+    padding:20px;
+    border-bottom:3px #b01f24 solid ;
+
+}
+div.contact p{
+    padding:10px;
+    letter-spacing: 3px;
+}
+/* .hr{
+    width: 70%;
+    border:2px solid;
+    transform:rotate(90deg);
+    
+} */
+div.social{
+    padding:1px;
+
+}
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+.fa-instagram {
+    background: #125688;
+    color: white;
+  }
+.fa-linkedin {
+background: #007bb5;
+color: white;
+}
 div.footer{
     margin-top:4.4%;
     border: 4px solid #b01f24;
@@ -181,7 +241,7 @@ div.footer{
     font-size: 16px;
   }
   /* about us footer cc */
-  div.footerus{
+  div.footerus, div.footercon{
    
     border: 4px solid #b01f24;
     border-radius: 10px;
@@ -190,6 +250,7 @@ div.footer{
     font-weight: Regular;
     font-size: 16px;
   }
+/* contact us footer */
 .final{
     color: black;
     display: flex;
