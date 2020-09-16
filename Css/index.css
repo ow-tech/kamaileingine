@@ -173,11 +173,17 @@ a.active,a:active, a:hover{
 }
 div.usimg{
     position:fixed;
+    height:100%;
+    width:100%;
+    background-image: url('https://bit.ly/2FxShYt');
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: contain;
 }
-.usimg img{
+/* .usimg img{
     display:block;
     margin: auto auto auto 30%;
-}
+} */
 
     /* contact section css */
 .contact{

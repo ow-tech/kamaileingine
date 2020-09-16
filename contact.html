@@ -130,19 +130,19 @@
     <script type="text/javascript">
     function sendEmail(){
         alert('You have clicked')
-            // let from = document.getElementById("email").value;
-            // let subject = document.getElementById("name").value;
-            // let phone =document.getElementById("phone").value;
-            // let body = document.getElementByID('message').value;
+            let email = document.getElementById("email").value;
+            let name = document.getElementById("name").value;
+            let phone =document.getElementById("phone").value;
+            let body = document.getElementById('message').value;
 
             Email.send({
-                SecureToken: "3ad66587-cc4d-42e6-9799-fade3a45bafd",
-                To : 'alexbarasa0723@gmail.com',
+                SecureToken: "917c472f-5491-4dbe-b9ad-8aaeea64b2bc",
+                To : 'wasaabitechdesign@gmail.com',
                 From : "wasaabitechdesign@gmail.com",
-                Subject : "This is the subject",
-                Body : "And this is the body"
+                Subject : "pontential Client's/Partner's Name : "+ name +" phone : "+phone +" email : "+ email,
+                Body : body,
             }).then(
-            message => alert(message)
+            message => alert('Message Sent')
             );
     }
         const inputs = document.querySelectorAll(".input");
