@@ -8,6 +8,8 @@
     <link  href='Css/index.css' rel = "stylesheet" type = "text/css" media = 'all'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <script src="./js/script.js"></script> -->
     <title>Wa~saabi</title>
@@ -85,29 +87,29 @@
                 <div class='contact-form'>
                     <div class='contact-info'></div>
                     <div class='con-form'>
-                        <form action='contact.html'>
+                        <form method="post">
                             <h3 class='title'>Contact Us</h3>
                             <div class='input-container'>
-                                <input type="text" name="name" class="input">
+                                <input type="text" name="name" id="name" class="input">
                                 <label>Name</label>
                                 <span>Name</span>
                             </div>
                             <div class='input-container'>
-                                <input type="email" name="email" class="input">
+                                <input type="email" name="email" id="email" class="input">
                                 <label>Email</label>
                                 <span>Email</span>
                             </div>
                             <div class='input-container'>
-                                <input type="phone" name="phone" class="input">
+                                <input type="phone" name="phone" id="phone" class="input">
                                 <label>Phone</label>
                                 <span>Phone</span>
                             </div>
                             <div class='input-container textarea'>
-                                <textarea name="message" class="input"></textarea>
+                                <textarea name="message" id="message" class="input"></textarea>
                                 <label>Message</label>
                                 <span>Message</span>
                             </div>
-                            <input type="submit" value="Send" class="btn" id='sed'>
+                            <input type="button" value="Send"  id='send' clas="btn" onclick="sendEmail()">
                         </form>
                     </div>
                 </div>
@@ -118,12 +120,31 @@
 
 
      <!-- Footer -->
-    <footer>
-        <div class="footercon">
+    <footer class="">
+        <div class="footercon contactf">
             <p class="final">&copy;2020|Wa~Saabi<img class='logo1'src='./images/wa_saabi Inc Logo.jpg'>|privacy|cookie.|Terms|</p>
         </div>
     </footer>
-    <script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script type="text/javascript">
+    function sendEmail(){
+        alert('You have clicked')
+            // let from = document.getElementById("email").value;
+            // let subject = document.getElementById("name").value;
+            // let phone =document.getElementById("phone").value;
+            // let body = document.getElementByID('message').value;
+
+            Email.send({
+                SecureToken: "3ad66587-cc4d-42e6-9799-fade3a45bafd",
+                To : 'alexbarasa0723@gmail.com',
+                From : "wasaabitechdesign@gmail.com",
+                Subject : "This is the subject",
+                Body : "And this is the body"
+            }).then(
+            message => alert(message)
+            );
+    }
         const inputs = document.querySelectorAll(".input");
 
         function focusFunc(){
@@ -140,6 +161,11 @@
             input.addEventListener("focus", focusFunc);
             input.addEventListener("blur", blurFunc);
         });
+
+
+        
+        
     </script>
+
 </body>
 </html>

@@ -87,6 +87,3 @@ $(function(){
     })
 
 });
-
-// contact us for js
-
