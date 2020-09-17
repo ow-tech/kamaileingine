@@ -319,7 +319,8 @@ textarea.input{
     font-size:0.95rem;
     color:#b01f24;
     border-radius:10px;
-    outline:none;
+    outline: #b01f24;
+    outline-color: #b01f24;
     cursor: pointer;
     transition:0.3s;
 }
@@ -363,6 +364,47 @@ textarea.input{
 .input-container.focus span:after{
     width:50%;
     opacity:1;
+}
+/* partnership section */
+.partner{
+    display: block;
+    margin-top: 3%;
+}
+.partner h3{
+    letter-spacing: 5px;
+    line-height: 30px;
+    font-weight: 600;
+    padding:10px;
+}
+.box{
+    width: 100%;
+    height:200px;
+    background:#000;
+    overflow: hidden;
+    border-radius:10px;
+    transition:.6s;
+}
+.box .img-box{
+    position:absolute;
+    top:0;
+    left:0;
+    transition:0.5s;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+
+.box:hover .img-box{
+    opacity:0.4;
+}
+.box .content{
+    position:absulte;
+    width:100%;
+    height:50%;
+    bottom:0;
+    padding:20px;
+    box-sizing:border-box;
+    text-align:center;
 }
 
 div.footer{
