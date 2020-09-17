@@ -244,7 +244,7 @@ background: #007bb5;
 color: white;
 }
 
-.partner .fa-facebook, .fa-twitter, .fa-instagram, .fa-linkedin {
+.partner, .fa-facebook, .fa-twitter, .fa-instagram, .fa-linkedin {
     background:none;
     color: white;
   }
@@ -401,6 +401,9 @@ textarea.input{
 
 .box:hover .img-box{
     opacity:0.4;
+}
+.box:hover .content{
+    position:relative;
 }
 .box .content{
     position:absulte;
