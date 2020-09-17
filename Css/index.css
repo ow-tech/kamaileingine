@@ -244,6 +244,10 @@ background: #007bb5;
 color: white;
 }
 
+.partner .fa-facebook, .fa-twitter, .fa-instagram, .fa-linkedin {
+    background:none;
+    color: white;
+  }
 
 .contact-form{
     width:100%;
@@ -377,12 +381,13 @@ textarea.input{
     padding:10px;
 }
 .box{
-    width: 100%;
-    height:200px;
+    width: 90%;
+    height:80%;
     background:#000;
     overflow: hidden;
     border-radius:10px;
     transition:.6s;
+    position:relative;
 }
 .box .img-box{
     position:absolute;
@@ -405,6 +410,9 @@ textarea.input{
     padding:20px;
     box-sizing:border-box;
     text-align:center;
+}
+.box .content {
+    color:whitesmoke ;
 }
 
 div.footer{
