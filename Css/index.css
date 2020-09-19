@@ -425,17 +425,15 @@ textarea.input{
     float:right;
     perspective: 1000px;
     position:relative;
-    top:-600px;
+    top:-450px;
     left:150px;
     width:770px;
-    height:220px;
-
 }
 .card{
     position: absolute;
     left:0;
     width:250px;
-    height:100%;
+    height:220px;
     padding:10px;
     transform-style: preserve-3d;
     transition: all 0.5s ease;
