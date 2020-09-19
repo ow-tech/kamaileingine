@@ -194,7 +194,7 @@ div.usimg{
 .condiv1{
     border-radius: 10px;
 }
-h4{
+.h4conta{
     font-family:Open Sans ;
     font-size: larger;
     font-size:20px;
@@ -406,6 +406,36 @@ textarea.input{
     color:whitesmoke ;
 }
 
+
+/* section body careers */
+.h4career{
+    margin-top:20px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.pcareer1{
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.pcareer{
+    /* display:block; */
+    width: 40%;
+}
+.mainCardContainer{
+    float:right;
+    position:relative;
+    top:-600px;
+    width:250px;
+    height:320px;
+}
+.card{
+    position: absolute;
+    width:100%;
+    height:100%;
+    transform: all 0.5s ease;
+    background:yellow;
+
+}
 div.footer{
     margin-top:4.4%;
     border: 4px solid #b01f24;
