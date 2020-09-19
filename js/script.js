@@ -107,11 +107,8 @@ function sendEmail(){
     let inputs = document.querySelectorAll('input')
     let textarea = document.querySelector('textarea')
     
-    if (email ==="" && name ===""){
-        alert('You need to fill your Phone No. and atleast name or Email. Ensure Your Message Is filled Too and Send Again.')
-    }
-    else if(phone ==='' && body ===""){
-        alert('You need to fill your Phone No. and atleast name or Email. Ensure Your Message Is filled Too and Send Again.')
+    if ((email ==="" ||phone ==='') && (body ==="")){
+        swal("Wa~saabi Advices", "You need to fill your Phone No. and atleast name or Email. Ensure Your Message Is filled Too and Send Again.", "error");
     }
     else{
         Email.send({
@@ -122,7 +119,7 @@ function sendEmail(){
             Body : body,
             }).then(
                 message => 
-                alert('Message Sent'),
+                swal("Wa~saabi Greets!", "Message Received!", "success"),
                 inputs.forEach((input, textarea) => input.value ='', textarea.value='')
                 )
     }
