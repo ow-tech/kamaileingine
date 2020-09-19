@@ -87,3 +87,59 @@ $(function(){
     })
 
 });
+//  nav testing jquery
+$.get("navigation.html", function(data){
+    $("#nav-placeholder").replaceWith(data);
+});
+// active tab
+$('.navis').on('click', 'li', function(){
+    $('.navis li.active').removeClass('active');
+    $(this).addClass('active');
+});
+
+// contact paje script
+
+function sendEmail(){
+    let email = document.getElementById("email").value;
+    let name = document.getElementById("name").value;
+    let phone =document.getElementById("phone").value;
+    let body = document.getElementById('message').value;
+    let inputs = document.querySelectorAll('input')
+    let textarea = document.querySelector('textarea')
+    
+    if (email ==="" && name ===""){
+        alert('You need to fill your Phone No. and atleast name or Email. Ensure Your Message Is filled Too and Send Again.')
+    }
+    else if(phone ==='' && body ===""){
+        alert('You need to fill your Phone No. and atleast name or Email. Ensure Your Message Is filled Too and Send Again.')
+    }
+    else{
+        Email.send({
+            SecureToken: "917c472f-5491-4dbe-b9ad-8aaeea64b2bc",
+            To : 'wasaabitechdesign@gmail.com',
+            From : "wasaabitechdesign@gmail.com",
+            Subject : "pontential Client's/Partner's Name : "+ name +" phone : "+phone +" email : "+ email,
+            Body : body,
+            }).then(
+                message => 
+                alert('Message Sent'),
+                inputs.forEach((input, textarea) => input.value ='', textarea.value='')
+                )
+    }
+};
+const inputs = document.querySelectorAll(".input");
+
+function focusFunc(){
+    let parent = this.parentNode;
+    parent.classList.add("focus");
+}
+function blurFunc(){
+    let parent = this.parentNode;
+    if(this.value ==""){
+        parent.classList.remove("focus");}
+}
+
+inputs.forEach((input)=>{
+    input.addEventListener("focus", focusFunc);
+    input.addEventListener("blur", blurFunc);
+}); 
