@@ -227,6 +227,10 @@ div.social{
     background:none;
     color: white;
   }
+.fa-arrow-right{
+    width:40px;
+    transform:rotate(155deg);
+}
 
 .contact-form{
     width:100%;
@@ -449,8 +453,6 @@ textarea.input{
     background:#b01f24;
     text-align:center;
     border-radius: 20px;
-   
-
 }
 .back{
     position:absolute;
@@ -478,6 +480,10 @@ textarea.input{
     width:450px;
     text-align: center;
     letter-spacing:2px;
+    cursor: pointer;
+}
+#arrow-right{
+    display:none;
 }
 .p{
     display:none;
@@ -516,7 +522,7 @@ div.footer{
     padding-top:15px;
     align-items: center;
   }
-  @media all and (max-width: 932px) {
+/* @media all and (max-width: 932px) {
     .checkbtn{
         display:block; 
     }
@@ -551,7 +557,7 @@ div.footer{
     #check:checked ~ #section{
         display: none;
     }
-}
+} */
 
 .img1{
    

@@ -1,5 +1,3 @@
-// index.html User InterFace
-
 
 // nav dropdown
 $(function(){
@@ -67,9 +65,6 @@ $(function(){
 $(function(){
     $('.introSlogan p').slideDown(10000);
 });
-
-
-
 
 // about us user interface
 $(function(){
@@ -139,4 +134,21 @@ function blurFunc(){
 inputs.forEach((input)=>{
     input.addEventListener("focus", focusFunc);
     input.addEventListener("blur", blurFunc);
-}); 
+});
+
+
+//  what we do script
+
+$("#arrow-right").slideDown(1500)
+$('.wwd div').click(function(){
+    $('h4', this).css(
+        "color", '#b01f24',
+    ),
+    $('.fa-arrow-right', this).css(
+        "transform","rotate(0deg)",
+        "color",'red',
+    )
+    $('.p', this).slideToggle();
+
+
+})
