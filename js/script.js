@@ -145,10 +145,11 @@ $('.wwd div').click(function(){
         "color", '#b01f24',
     ),
     $('.fa-arrow-right', this).css(
-        "transform","rotate(0deg)",
-        "color",'red',
+        "color", '#b01f24',
     )
-    $('.p', this).slideToggle();
-
-
+    
+    $('.fa-arrow-right', this).css(
+        "transform","rotate(0deg)",
+    )
+    $('.p', this).slideToggle(1000);
 })
