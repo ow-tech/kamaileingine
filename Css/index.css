@@ -54,10 +54,6 @@ li.active, a:active, a:hover{
     cursor: pointer;
 
  }
- ul.child >a:hover{
-    background-color:#b01f24 ;
-
- }
 
 .checkbtn{
     font-size:30px;
@@ -469,6 +465,24 @@ textarea.input{
     transform:rotateY(180deg);
 }
 
+/* section software */
+
+div.sof{
+    margin-top:10px;
+    padding-top:30px;
+    
+}
+.sofimg{
+    /* flex:right; */
+    opacity: .6;
+  
+}
+.softext{
+    float:right;
+    width:100px;
+    height:100vh;
+    
+}
 div.footer{
     margin-top:4.4%;
     border: 4px solid #b01f24;
