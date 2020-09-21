@@ -467,21 +467,20 @@ textarea.input{
 
 /* section software */
 
-div.sof{
-    margin-top:10px;
-    padding-top:30px;
+.wwd{
+    margin:auto;
+    width:40%;
     
 }
-.sofimg{
-    /* flex:right; */
-    opacity: .6;
-  
+.software, .design, .cctv {
+    margin-top:40px;
+    border-bottom: #b01f24 3px solid;
+    width:450px;
+    text-align: center;
+    letter-spacing:2px;
 }
-.softext{
-    float:right;
-    width:100px;
-    height:100vh;
-    
+.p{
+    display:none;
 }
 div.footer{
     margin-top:4.4%;
