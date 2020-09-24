@@ -39,12 +39,16 @@ nav li a {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
-
+a:link{
+    text-decoration: none;
+}
 li.active, a:active, a:hover{
     
     background-color:#b01f24 ;
     transition: all 0.4s ease 0s;
     border-radius: 3px;
+    
+    color:whitesmoke;
 
 }
  nav ul ul{
@@ -60,22 +64,22 @@ li.active, a:active, a:hover{
 }
 #slider {
     margin-top:30px;
-    width:500px;
-    height:300px;
+    width:700px;
+    height:500px;
     overflow:hidden;
 }
 #slider .slides{
     display:block;
     width: 2900px;
-    height:300px;
+    height:500px;
     margin:0;
     padding:0;
 }
 #slider .slide{
     float: left;
     list-style-type:none ;
-    width:500px;
-    height:300px;
+    width:700px;
+    height:500px;
 }
 .introSlogan{
     border-top:solid 1px #b01f24;
@@ -429,6 +433,7 @@ textarea.input{
 }
 #arrow-right{
     display:none;
+    transition: all 0.5s ease;
 }
 .p{
     display:none;
@@ -459,6 +464,7 @@ div.footer,div.footerus, div.footercon{
     display: flex;
     justify-content: center;
     padding-top:15px;
+    font-weight: 1;
     align-items: center;
   }
 .img1{
