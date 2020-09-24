@@ -4,7 +4,6 @@
     padding:0;
     margin:0;
     box-sizing:border-box;
-    /* overflow: hidden; */
 }
 body{
     text-decoration:none;
@@ -21,7 +20,6 @@ nav ul {
     margin:10px;
     padding:0;
     position: relative;
-    /* border-radius: 50px; */
 }
 nav li {
     float: left;
@@ -55,37 +53,21 @@ li.active, a:active, a:hover{
     cursor: pointer;
 
  }
-/* 
-.checkbtn{
-    font-size:30px;
-    color:whitesmoke;
-    float:right;
-    line-height: 80px;
-    margin-right:40px;
-    cursor: pointer;
-    display: none;
-}
-#check{
-    display:none;
-    
-} */
-
-/* section css */
-    /* index section */
 .section{
-    margin-top:3%;
-    height: 400px;
+    margin-top:1%;
+    /* height: 400px; */
 
 }
 #slider {
+    margin-top:30px;
     width:500px;
-    height:333px;
+    height:300px;
     overflow:hidden;
 }
 #slider .slides{
     display:block;
     width: 2900px;
-    height:333px;
+    height:300px;
     margin:0;
     padding:0;
 }
@@ -93,21 +75,21 @@ li.active, a:active, a:hover{
     float: left;
     list-style-type:none ;
     width:500px;
-    height:333px;
+    height:300px;
 }
 .introSlogan{
     border-top:solid 1px #b01f24;
-    width:40%;
+    /* width:40%; */
     transition:0.5s all ease-in-out;
     text-align: center;
 
     
 }
 .introSlogan p{
-    margin-top:70px;
+    /* margin-top:70px; */
     border-block-start-width: thick;
     font-weight: Regular;
-    font-size: 30px;
+    font-size: 50px;
     display: none;
     color:black;
 }
@@ -169,12 +151,6 @@ div.usimg{
     background-repeat: no-repeat;
     background-size: contain;
 }
-/* .usimg img{
-    display:block;
-    margin: auto auto auto 30%;
-} */
-
-    /* contact section css */
 .contact{
     margin-top:30px;
     padding:20px;
@@ -194,12 +170,6 @@ div.contact p{
     padding:10px;
     letter-spacing: 1px;
 }
-/* .hr{
-    width: 70%;
-    border:2px solid;
-    transform:rotate(90deg);
-    
-} */
 div.social{
     padding:1px;
 
@@ -339,11 +309,7 @@ textarea.input{
     width:50%;
     opacity:1;
 }
-/* partnership section */
-/* .partner{
-    display: block;
-    margin-top: 1%;
-} */
+
 .partner h3{
     color:#000;
     letter-spacing: 3px;
@@ -392,6 +358,9 @@ textarea.input{
 
 
 /* section body careers */
+.carre{
+    text-align:center;
+}
 .h4career{
     margin-top:20px;
     font-weight: 600;
@@ -402,23 +371,15 @@ textarea.input{
     letter-spacing: 3px;
 }
 .pcareer{
-    /* display:block; */
-    width: 40%;
+    margin-left:20%;
 }
 .mainCardContainer{
-    float:right;
+    margin-top:20px;
     perspective: 1000px;
-    position:relative;
-    top:-450px;
-    left:150px;
-    width:770px;
 }
 .card{
-    position: absolute;
-    left:0;
-    width:250px;
-    height:220px;
-    padding:10px;
+    height:40vh;
+    padding:5px;
     transform-style: preserve-3d;
     transition: all 0.5s ease;
     cursor: pointer;
@@ -500,43 +461,6 @@ div.footer,div.footerus, div.footercon{
     padding-top:15px;
     align-items: center;
   }
-/* @media all and (max-width: 932px) {
-    .checkbtn{
-        display:block; 
-    }
-    ul{
-        position: fixed;
-        width:100%;
-        height:60vh;
-        background:#000000;
-        opacity: 1;
-        top:80px;
-        left:-100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav ul li {
-        display:block;
-        margin:10px;
-        font-weight:bold ;
-    }
-    a:hover, a:active, a.active{
-        background:none;
-        color:#b01f24;
-    }
-    #check:checked ~ 
-    ul{
-        position: relative;
-        left:0;
-        top:-100px;
-        
-     }
-     
-    #check:checked ~ #section{
-        display: none;
-    }
-} */
-
 .img1{
    
     float:right;
