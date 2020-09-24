@@ -73,20 +73,18 @@ li.active, a:active, a:hover{
 /* section css */
     /* index section */
 .section{
-    /* background-color: black; */
-    /* color:black; */
     margin-top:3%;
     height: 400px;
 
 }
-/* #slider {
+#slider {
     width:500px;
     height:333px;
     overflow:hidden;
 }
 #slider .slides{
     display:block;
-    width: 3000px;
+    width: 2900px;
     height:333px;
     margin:0;
     padding:0;
@@ -98,18 +96,21 @@ li.active, a:active, a:hover{
     height:333px;
 }
 .introSlogan{
+    border-top:solid 1px #b01f24;
     width:40%;
     transition:0.5s all ease-in-out;
+    text-align: center;
+
     
 }
 .introSlogan p{
-    border-top:solid 2px #b01f24;
+    margin-top:70px;
     border-block-start-width: thick;
     font-weight: Regular;
-    font-size: 16px;
+    font-size: 30px;
     display: none;
     color:black;
-} */
+}
     /* about us section */
 #us{
     background-color: black;
