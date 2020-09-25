@@ -48,33 +48,42 @@
                 </div>
             </div>
             <div class="col-md-7" id="form">
-                <div class='contact-form'>
-                    <div class='contact-info'></div>
-                    <div class='con-form'>
-                        <form method="post">
-                            <h3 class='title'>Contact Us</h3>
-                            <div class='input-container'>
-                                <input type="text" name="name" id="name" class="input">
-                                <label>Name</label>
-                                <span>Name</span>
-                            </div>
-                            <div class='input-container'>
-                                <input type="email" name="email" id="email" class="input">
-                                <label>Email</label>
-                                <span>Email</span>
-                            </div>
-                            <div class='input-container'>
-                                <input type="phone" name="phone" id="phone" class="input">
-                                <label>Phone</label>
-                                <span>Phone</span>
-                            </div>
-                            <div class='input-container textarea'>
-                                <textarea name="message" id="message" class="input"></textarea>
-                                <label>Message</label>
-                                <span>Message</span>
-                            </div>
-                            <input type="button" value="Send"  id='send' class="btn" onclick="sendEmail()">
-                        </form>
+                <div class='row'>
+                    <div class='col-md-7 form'>
+                        <div class='contact-info'></div>
+                        <div class='con-form'>
+                            <form method="post">
+                                <h3 class='title'>Contact Us</h3>
+                                <div class='input-container'>
+                                    <input type="text" name="name" id="name"  class="input">
+                                    <label>Name</label>
+                                    <span>Name</span>
+                                </div>
+                                <div class='input-container'>
+                                    <input type="email" name="email" id="email" required class="input">
+                                    <label>Email</label>
+                                    <span>Email</span>
+                                </div>
+                                <div class='input-container'>
+                                    <input type="phone" name="phone" id="phone" required class="input">
+                                    <label>Phone</label>
+                                    <span>Phone</span>
+                                </div>
+                                <div class='input-container textarea'>
+                                    <textarea name="message" required id="message" class="input"></textarea>
+                                    <label>Message</label>
+                                    <span>Message</span>
+                                </div>
+                                <input type="button" value="Send"  id='send' class="btn" onclick="sendEmail()">
+                            </form>
+                        </div>
+                    </div>
+                    <div class=' col-md-5 mt-4 p-5'>
+                        <small><i class="fas fa-check-double"></i>  Wa~saabi contacts you wihin 24 hours</small><br>
+                        <small><i class="fas fa-check-double"></i>We engage in an initial discussion to understand your requirements</small><br>
+                        <small><i class="fas fa-check-double"></i>Our team of designers and developers access the scope and propose a way forward</small><br>
+                        <small><i class="fas fa-check-double"></i>All information is protected via a mutual NDA</small>
+                        
                     </div>
                 </div>
             </div>
@@ -85,8 +94,8 @@
 
      <!-- Footer -->
     <footer class="">
-        <div class="footercon contactf">
-            <p class="final">&copy;2020|Wa~Saabi<img class='logo1'src='./images/wa_saabi Inc Logo.jpg'>|privacy|cookie.|Terms|</p>
+        <div class="">
+            <small class="final">&copy;2020|Wa~Saabi<img class='logo1'src='./images/wa_saabi Inc Logo.jpg'>|privacy|cookie.|Terms|</small>
         </div>
     </footer>
     <script src="https://smtpjs.com/v3/smtp.js">
