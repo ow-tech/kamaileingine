@@ -23,10 +23,10 @@ $(function(){
 // }, 1000)
 // $(selector).animate(obj, time, callback)
 $(function(){
-    let slideWidth = 500;
+    let slideWidth = 700;
     let animationSpeed = 3000;
     let pause = 5000;
-    let currentSlide = 1;
+    let currentSlide = 0;
     
 
 
@@ -40,7 +40,7 @@ $(function(){
         slideInterval = setInterval(function(){
             $sliderContainer.animate({'margin-left': '-='+slideWidth}, animationSpeed, function(){
                 currentSlide ++;
-                if (currentSlide == $slides.length-3){
+                if (currentSlide == $slides.length){
                     currentSlide = 0;
                     $sliderContainer.css('margin-left', 0)
                 }

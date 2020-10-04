@@ -68,7 +68,7 @@ li.active, a:active, a:hover{
 }
 #slider .slides{
     display:block;
-    width: 2900px;
+    width: 4900px;
     height:500px;
     margin:0;
     padding:0;
@@ -146,10 +146,11 @@ li.active, a:active, a:hover{
     top:-8px;
 }
 div.usimg{
-    position:fixed;
+    text-align: center;
+    position: fixed;
     height:100%;
     width:100%;
-    background-image: url('https://bit.ly/2FxShYt');
+    /* background-image: url('https://bit.ly/34pA6gs'); */
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -451,6 +452,9 @@ div.footer,div.footerus, div.footercon{
   /* about us footer cc */
   div.footerus{
       position:relative;
+      top:-50px;
+      left:0;
+      height: 0vh;
   }
   /* div.footerus, div.footercon{
    
