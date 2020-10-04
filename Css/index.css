@@ -43,11 +43,9 @@ a:link{
     text-decoration: none;
 }
 li.active, a:active, a:hover{
-    
     background-color:#b01f24 ;
     transition: all 0.4s ease 0s;
     border-radius: 3px;
-    
     color:whitesmoke;
 
 }
@@ -471,7 +469,6 @@ div.footer,div.footerus, div.footercon{
     display: flex;
     justify-content: center;
     padding-top:15px;
-    font-weight: 1;
     align-items: center;
   }
 .img1{
@@ -491,7 +488,6 @@ div.footer,div.footerus, div.footercon{
 
 
 /* LOGOS  */
-
 
 .logo1{
     height:30px;
